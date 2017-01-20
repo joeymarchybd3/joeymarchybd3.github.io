@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<!--If you already have jquery on the page you don't need to insert this script tag-->
@@ -25,48 +26,47 @@
 <body>
 Hello World. JM
 
-<script>
-                                
-                                // ********************************************************************************
-                                // This needs to be placed in the document body where you want the widget to render
-                                // ********************************************************************************
-                                
-                                new DESK.Widget({ 
-                                        version: 1, 
-                                        site: 'bd2.desk.com', 
-                                        port: '80', 
-                                        type: 'email', 
-                                        displayMode: 1,  //0 for popup, 1 for lightbox
-                                        features: {  
-                                        },  
-                                        fields: { 
-                                                ticket: { 
-                                                        // desc: &#x27;&#x27;,
-                                // labels_new: &#x27;&#x27;,
-                                // priority: &#x27;&#x27;,
-                                // subject: &#x27;&#x27;,
-                                // custom_case_type: &#x27;&#x27;,
-                                // custom_my_field_is_awesome: &#x27;&#x27;
-                                                }, 
-                                                interaction: { 
-                                                        // email: &#x27;&#x27;,
-                                // name: &#x27;&#x27;
-                                                }, 
-                                                email: { 
-                                                        //subject: '', 
-                                                        //body: '' 
-                                                }, 
-                                                customer: { 
-                                                        // company: &#x27;&#x27;,
-                                // desc: &#x27;&#x27;,
-                                // first_name: &#x27;&#x27;,
-                                // last_name: &#x27;&#x27;,
-                                // locale_code: &#x27;&#x27;,
-                                // title: &#x27;&#x27;
-                                                } 
-                                        } 
-                                }).render();  
-                        </script>
-                        
+<script>                                
+{{ // ********************************************************************************
+   // This needs to be placed in the document body where you want the widget to render
+   // ********************************************************************************
+          
+          new DESK.Widget({ 
+                  version: 1, 
+                  site: 'bd2.desk.com', 
+                  port: '80', 
+                  type: 'email', 
+                  displayMode: 1,  //0 for popup, 1 for lightbox
+                  features: {  
+                  },  
+                  fields: { 
+                          ticket: { 
+                                  // desc: &#x27;&#x27;,
+          // labels_new: &#x27;&#x27;,
+          // priority: &#x27;&#x27;,
+          // subject: &#x27;&#x27;,
+          // custom_case_type: &#x27;&#x27;,
+          // custom_my_field_is_awesome: &#x27;&#x27;
+                          }, 
+                          interaction: { 
+                                  // email: &#x27;&#x27;,
+          // name: &#x27;&#x27;
+                          }, 
+                          email: { 
+                                  //subject: '', 
+                                  //body: '' 
+                          }, 
+                          customer: { 
+                                  // company: &#x27;&#x27;,
+          // desc: &#x27;&#x27;,
+          // first_name: &#x27;&#x27;,
+          // last_name: &#x27;&#x27;,
+          // locale_code: &#x27;&#x27;,
+          // title: &#x27;&#x27;
+                          } 
+                  } 
+          }).render();  
+  </script>
+  }}
 </body>
 </html>
