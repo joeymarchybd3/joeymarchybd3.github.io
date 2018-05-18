@@ -7,16 +7,19 @@
 
 </head>
 <body>
-  <div style="font-family: helvetica, arial, verdana; font-size: 16px; padding: 20px 30px;">
-    <h1>Contextual Support » Preview Instructions</h1>
+	<div style="font-family: helvetica, arial, verdana; font-size: 16px; padding: 20px 30px;">
+    <h1>Contextual Support » Business Intelligence</h1>
 
     <p>You can only do two things on each page. Click on the screen to go to the next example or click on the question mark icon <img src="question.png" width="25px"> This will show you a a sample of contextual support articles served up specifically for the page you are on. <b>Imagine the possibilities....</b></p> 
     <p>OK, now snap out of it. We have samples for for the Menu screen, Portfolio View, Reports and Business Intelligence. We can trigger this widget from any link on the page like the Support Articles link in the Support Beacon. <i>Note: We do not plan to display the question mark icon at all times, only when we launch the article. Once the article is dismissed the icon goes away as well.<i></p>
   </div>
-
+  </div>
 	<div style="position:relative;">
-		<a href="pv.html" style="display:block; width:100%; height: 100%; border: 0px solid #000; position: absolute; top:0px; left:0px;" id="btn-toggle"></a>
-	<img src="index.png" width="100%" />
+	
+		<a href="index.html" style="display:block; width:100%; height: 100%; border: 0px solid #000; position: absolute; top:0px; left:0px;" id="btn-toggle"></a>
+	<img src="bi.png" width="100%" />
+
+<!--		<img src="https://dzwonsemrish7.cloudfront.net/items/3i1F1Z2x2U3g3N3w1w2j/Image%202018-04-19%20at%2012.54.06%20PM.png" width="1500" />-->
 
 	</div>
 
@@ -29,18 +32,17 @@
     color: '#3dbeb3',
     topArticles: true,
     attachment: true,
-    icon: 'question',
+    icon: 'question',	
     instructions:'This is instructional text that goes above the form.',
   });
 
   HS.beacon.ready(function() {
   	//portfolio view
   HS.beacon.suggest([
-    '5ace17ef0428630750924d6a', //may release notes
-    '5a78c0832c7d3a4a4198d152', //DIY BD3 Transition
-    '5aa860dc2c7d3a2c498300eb', //search in BD3
-    '58e7a28c2c7d3a52b42f4b24', //roles and firm user setup
-    '58e7a27d2c7d3a52b42f4b22'  //portfolio anda ccount setup
+    '59aeedf1042863033a1c9731', //overview
+    '59fc86fb0428633199242bc4', //allocation report
+    '59934dfd2c7d3a73488c0334', //dashboard overview
+    '594bf9ac04286305c68d4ab4' //dashboard themes  
   ]);
 });
 
