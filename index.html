@@ -6,7 +6,7 @@
 
 
 </head>
-<body>
+<body>One Love
 	<div style="position:relative;">
 	
 		<a href="#" style="display:block; width:130px; height: 30px; position: absolute; top:115px; left:1270px;" id="btn-toggle"></a>
@@ -26,9 +26,17 @@
     color: '#cacaca',
     topArticles: true,
     attachment: true,
-    instructions:'This is instructional text that goes above the form.'
+    instructions:'This is instructional text that goes above the form.',
   });
 
+  HS.beacon.ready(function() {
+  HS.beacon.suggest([
+    '5a942fb00428635340559460',
+    '58e7a258dd8c8e5c57313511',
+    '5ac276c22c7d3a0e9366ef37',
+    '5a957d9504286374f7085b45'
+  ]);
+});
 
   $('#btn-toggle').click(function() {
   	HS.beacon.toggle();
