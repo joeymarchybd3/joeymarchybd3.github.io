@@ -16,7 +16,7 @@
   </div>
 	<div style="position:relative;">
 	
-		<a href="reports.html" style="display:block; width:100%; height: 100%; border: 0px solid #000; position: absolute; top:0px; left:0px;" id="btn-toggle"></a>
+		<a href="reports.html" style="display:block; width:100%; height: 100%; border: 0px solid #000; position: absolute; top:0px; left:0px;" id="btn-toggle" onclick="return Beacon('toggle')"></a>
 	<img src="pv.png" width="100%" />
 
 <!--		<img src="https://dzwonsemrish7.cloudfront.net/items/3i1F1Z2x2U3g3N3w1w2j/Image%202018-04-19%20at%2012.54.06%20PM.png" width="1500" />-->
@@ -24,34 +24,8 @@
 	</div>
 
 
-<script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"https://black-diamond.helpscoutdocs.com/"},contact:{enabled:!1,formId:"a13ddb9a-43f3-11e8-8d65-0ee9bb0328ce"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">window.Beacon('init', '99638e8e-556e-4d0e-8b12-22211194edde')</script>
 
-<script>
-  HS.beacon.config({
-    modal: false,
-    color: '#3dbeb3',
-    topArticles: true,
-    attachment: true,
-    icon: 'question',	
-    instructions:'This is instructional text that goes above the form.',
-  });
-
-  HS.beacon.ready(function() {
-  	//portfolio view
-  HS.beacon.suggest([
-    '59c17ee9042863033a1cf5a8', //overview
-    '58e6d91cdd8c8e5c573131b6', //activation
-    '58e6d960dd8c8e5c573131b9', //dashboard overview
-    '594bec7504286305c68d4999', //card navigation
-    '5ae777962c7d3a3f981f16c2', //research tool overview
-    '594be3b32c7d3a0747ce19e8' //research tool overview
-  ]);
-});
-
-  $('#btn-toggle').click(function() {
-  	HS.beacon.toggle();
-  });
-
-</script>
 </body>
 </html>
