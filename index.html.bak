@@ -21,17 +21,16 @@
 	</div>
 
 
-<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
-<script type="text/javascript">window.Beacon('init', '99638e8e-556e-4d0e-8b12-22211194edde')</script>
+<script>!function(e,o,n){window.HSCW=o,window.HS=n,n.beacon=n.beacon||{};var t=n.beacon;t.userConfig={},t.readyQueue=[],t.config=function(e){this.userConfig=e},t.ready=function(e){this.readyQueue.push(e)},o.config={docs:{enabled:!0,baseUrl:"https://black-diamond.helpscoutdocs.com/"},contact:{enabled:!1,formId:"a13ddb9a-43f3-11e8-8d65-0ee9bb0328ce"}};var r=e.getElementsByTagName("script")[0],c=e.createElement("script");c.type="text/javascript",c.async=!0,c.src="https://djtflbt20bdde.cloudfront.net/",r.parentNode.insertBefore(c,r)}(document,window.HSCW||{},window.HS||{});</script>
 
 <script>
   HS.beacon.config({
-    modal: false
-   // color: '#3dbeb3',
-   // topArticles: true,
-   // attachment: true,
-   // icon: 'question',
-   // instructions:'This is instructional text that goes above the form.',
+    modal: false,
+    color: '#3dbeb3',
+    topArticles: true,
+    attachment: true,
+    icon: 'question',
+    instructions:'This is instructional text that goes above the form.',
   });
 
   HS.beacon.ready(function() {
