@@ -15,7 +15,7 @@
   </div>
 
 	<div style="position:relative;">
-		<a href="pv.html" style="display:block; width:100%; height: 100%; border: 0px solid #000; position: absolute; top:0px; left:0px;" id="btn-toggle"></a>
+		<a href="#" style="display:block; width:100%; height: 100%; border: 0px solid #000; position: absolute; top:0px; left:0px;" id="btn-toggle"></a>
 	<img src="index.png" width="100%" />
 
 	</div>
@@ -46,7 +46,9 @@
 });
 
   $('#btn-toggle').click(function() {
-  	HS.beacon.toggle();
+  	Beacon("init", "99638e8e-556e-4d0e-8b12-22211194edde");
+    Beacon("toggle");
+
   });
 
 </script>
